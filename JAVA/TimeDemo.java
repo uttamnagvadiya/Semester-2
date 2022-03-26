@@ -10,28 +10,38 @@ class Time{
         minute = input.nextInt();
         System.out.print("Second = ");
         second = input.nextInt();
+        System.out.println("\n");
     }
 
     void displayTime(){
-        this.second+=second;
-        while(this.second>60){
-            minute++;
-            this.second-=60;
-        }
-        this.minute+=minute;
-        while(this.minute>60){
-            hour++;
-            this.minute-=60;
-        }
-        this.hour+=hour;
+        System.out.println("Hour= "+ hour);
+        System.out.println("Minute= "+ minute);
+        System.out.println("Second= "+ second);
+    }
 
-        System.out.println("Hours : "+this.hour+"\nMinutes : "+this.minute+"\nSeconds : "+this.second);
+    Time addTime(Time z){
+        Time temp = new Time();
+        temp.second = second + z.second;
+        temp.minute = minute + z.minute + (temp.second/60);
+        temp.second = temp.second%60;
+        temp.hour = hour + z.hour + (temp.minute/60);
+        temp.minute = temp.minute%60;
+        
+        return temp;
     }
 }
-class TimeDemo{
+
+public class TimeDemo{
     public static void main(String[] args){
-        Time t = new Time();
-        t.setTime();
-        t.displayTime();
+        
+        Time t1 = new Time();
+        t1.setTime();
+       
+        Time t2 = new Time();
+        t2.setTime();
+
+        Time add = new Time();
+        add = t1.addTime(t2);
+        add.displayTime();
     }
 }
