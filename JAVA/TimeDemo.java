@@ -2,6 +2,10 @@ import java.util.Scanner;
 class Time{
     int hour, minute, second;
 
+    Time(){
+        hour=0; minute=0; second=0;
+    }
+
     void setTime(){
         Scanner input = new Scanner(System.in);
         System.out.print("Hour = ");
