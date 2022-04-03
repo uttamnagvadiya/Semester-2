@@ -2,9 +2,7 @@ import java.util.*;
 class Distance{
     int kilometer, meter, centimeter;
     Distance(){
-        kilometer = 0;
-        meter = 0;
-        centimeter = 0;
+        kilometer = 0; meter = 0; centimeter = 0;
     }
     void setDistance(){
         Scanner input = new Scanner(System.in);
