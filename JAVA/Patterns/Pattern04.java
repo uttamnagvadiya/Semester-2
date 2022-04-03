@@ -1,3 +1,9 @@
+// Output :
+//   j
+//  j a
+// j a v  
+//j a v a
+
 import java.util.Scanner;
 public class Pattern04{
     public static void main(String[] args){
