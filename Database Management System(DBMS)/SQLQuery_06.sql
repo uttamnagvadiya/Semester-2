@@ -1,3 +1,37 @@
+--------- Maths Function ---------------
+
+Select 5 * 30
+
+Select abs(-25), abs(25), abs(-50), abs(50)
+
+Select Ceiling(25.2), Ceiling(25.7), Ceiling(-25.2)
+
+Select Floor(25.2), Floor(25.7), Floor(-25.2)
+
+Select 5 % 2, 5 % 3
+
+Select Power(3, 2), Power(4, 3)
+
+Select Sqrt(25), Sqrt(30), Sqrt(50)
+
+Select Square(5), Square(15), Square(25)
+
+Select PI()
+
+Select Round(157.732, 2), Round(157.732, 0), Round(157.732, -2)
+
+Select Exp(2), Exp(3)
+
+Select Log10(5), Log10(100)
+
+Select sin(3.1415), cos(3.1415), tan(3.1415)
+
+Select Sign(25), Sign(0), Sign(-25)
+
+Select Rand()
+
+
+
 
 --------- String Function ---------------
 
