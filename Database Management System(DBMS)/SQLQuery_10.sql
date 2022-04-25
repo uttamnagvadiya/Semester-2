@@ -103,3 +103,10 @@ Insert into Employee Values ('E06', 'Anjana', 'E04')
 	From Student
 	Full Outer Join Result
 	on Student.Rno = Result.Rno
+	
+	
+10.	Select E.Name as EmployeeName,
+	       M.Name as ManagerName
+  	from Employee E
+	Inner Join Employee M
+	on E.ManagerNo = M.EmployeeNo
