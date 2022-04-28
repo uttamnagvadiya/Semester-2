@@ -39,12 +39,9 @@ public class TransportDemo{
         animal[3] = new Donkey();
 
         System.out.println("-------------------------------- Display Method Calling -----------------------------------");
-
-        animal[0].display();
-        animal[1].display();
-        animal[2].display();
-        animal[3].display();
-
+        for (int i=0; i<=3; i++){
+            animal[i].display();
+        }
         System.out.println("-------------------------------- Deliver Method Calling -----------------------------------");
 
         Camel a1 = new Camel();
