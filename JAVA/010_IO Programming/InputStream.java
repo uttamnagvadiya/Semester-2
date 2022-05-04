@@ -2,11 +2,11 @@ import java.io.*;
 public class InputStream{
     public static void main(String[] args){
         try{
-            FileInputStream fis = new FileInputStream("input.txt");
+            FileInputStream fis = new FileInputStream("bg.jpg");
             int x = 0;
             x = fis.read();
             while(x!=-1){
-                System.out.println(x);
+                System.out.print((char)x);
                 x = fis.read();
             }
         }catch(Exception e){
