@@ -43,7 +43,7 @@ class Manager extends Member{
 public class EmployeeDetails{
     public static void main(String[] args){
         Employee e = new Employee("uttam",18,"0987654321","Rajkot",150000.00,"java");
-        Manager m = new Manager("karan",17,"1234567890","Mahika",135431.56,"python");
+        Manager m = new Manager("karan",17,"1234567890","Mahika",135431.56,"CSE");
         e.printDetails();
         e.printSalary();
         e.printSpecialization(); 

@@ -4,7 +4,7 @@ public class BasicCalculator{
         double x, y;
         String operation;
         Scanner input = new Scanner(System.in);
-        System.out.print("x = ");sssssssssssss
+        System.out.print("x = ");
         x = input.nextDouble();
         System.out.print("y = ");
         y = input.nextDouble();
@@ -29,7 +29,7 @@ public class BasicCalculator{
             break;
 
             default : 
-            System.out.println("Please enter the valid Operation");
+            System.out.println("--->> Please enter the valid Operation. <<---");
         }
     }
 }

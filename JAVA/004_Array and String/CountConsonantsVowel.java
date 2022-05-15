@@ -16,7 +16,7 @@ public class CountConsonantsVowel{
                 consonant++;
             }
         } 
-        System.out.printf("=> %s Vowels in Your String.\n", vowel);
-        System.out.printf("=> %s Consonants in Your String.", consonant);
+        System.out.printf("==> %s Vowels in Your String.\n", vowel);
+        System.out.printf("==> %s Consonants in Your String.", consonant);
     }
 } 

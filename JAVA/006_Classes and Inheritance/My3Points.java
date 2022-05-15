@@ -1,4 +1,4 @@
-//-------------------- 3D Points --------------------------
+//-------------------- Distance between 3 Points --------------------------
 import java.util.Scanner;
 class MyPoint{
     double x, y, z;

@@ -7,7 +7,7 @@ public class CircleArea{
         System.out.print("Radius of Circle : ");
         r = input.nextDouble();
         
-        a = 3.14 * r * r;
+        a = 3.14 * Math.pow(r, 2);
 
         System.out.println("Area of Circle : " + a);
     }

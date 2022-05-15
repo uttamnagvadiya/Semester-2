@@ -25,7 +25,7 @@ public class MyPoints{
 
 
 
-//------------------ 2D Points --------------------------
+//------------------ Distance between 2 Points --------------------------
 import java.util.Scanner;
 class MyPoint{
     double x, y;
