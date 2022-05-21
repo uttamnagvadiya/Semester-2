@@ -2,10 +2,16 @@ import java.util.*;
 public class VectorClass{
     public static void main(String[] args){
         Vector <Integer> v = new Vector <Integer> ();
+
         for (int i=1; i<=10; i++){
             v.add(i);
         }
+        
         System.out.println("\nOriginal Vector : "+v+"\n");
+
+        //Replace the Element at the specified index
+        v.set(5, 100);
+        System.out.println(v);
         
         //Check Whether this Vector Contains Specified Element or All the Elements  
         System.out.println(v.contains(15));
@@ -32,9 +38,10 @@ public class VectorClass{
         // System.out.println(v.size());
         // System.out.println(v);
 
-        System.out.println("HashCode is this Vector : "+v.hashCode());
+        System.out.println("HashCode of this Vector : "+v.hashCode()+"\n");
+
         //Returns the Current Capacity of this Vector
-        System.out.println(v.capacity()+"\n");
+        System.out.println("Capacity of Vector : "+v.capacity()+"\n");
 
         //Iterating Over Vector Elements
         for (int i=0; i<v.size(); i++){
