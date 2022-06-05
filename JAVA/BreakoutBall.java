@@ -1,10 +1,12 @@
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.text.AttributeSet.ColorAttribute;
+// import javax.swing.ImageIcon;
+// import javax.swing.JFrame;
+// import javax.swing.JPanel;
+// import javax.swing.text.AttributeSet.ColorAttribute;
 
 import java.awt.event.KeyListener;
-import javax.swing.Timer;
-import java.util.concurrent.BlockingQueue;
+// import javax.swing.Timer;
+// import java.util.concurrent.BlockingQueue;
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -48,7 +50,7 @@ class CreateGame extends JPanel implements KeyListener, ActionListener{
         brick.draw((Graphics2D)g);
 
         //Create Borders
-        g.setColor(Color.magenta);
+        g.setColor(Color.orange);
         g.fillRect(0, 0, 4, 800);
         g.fillRect(0, 0, 880, 4);
         g.fillRect(880, 0, 4, 800);
@@ -102,7 +104,7 @@ class CreateGame extends JPanel implements KeyListener, ActionListener{
                 ballYdir = -ballYdir;
             }
 
-            U:  for (int i=0; i<brick.bricks.length; i++){
+                for (int i=0; i<brick.bricks.length; i++){
                     for (int j=0; j<brick.bricks[0].length; j++){
                         if(brick.bricks[i][j] > 0){
                             int brickX = j*brick.brickWidth+80;
@@ -125,7 +127,7 @@ class CreateGame extends JPanel implements KeyListener, ActionListener{
                                 else{
                                     ballYdir = -ballYdir;
                                 }
-                                break U;
+                                
                             }
                         }
                     }
@@ -238,9 +240,12 @@ public class BreakoutBall {
         CreateGame gamePlay = new CreateGame();
         obj.setBounds(400, 100, 900, 650);
         obj.setTitle("_Breakout Ball_");
-        //obj.setResizable(false);
+        obj.setResizable(false);
         obj.setVisible(true);
-        //obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         obj.add(gamePlay);
+
+        ImageIcon icon = new ImageIcon("Ball.jpg");
+        obj.setIconImage(icon.getImage());
     }
 }
