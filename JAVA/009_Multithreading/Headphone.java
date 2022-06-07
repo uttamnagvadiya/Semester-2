@@ -4,14 +4,14 @@ class MyHeadPhone{
         while (true) {
             stock++;
             System.out.println("Produce = " + stock);
-           try{
-               Thread.sleep(250);
-                if(stock > 5){
-                Thread.sleep(800);
-                }
-           }catch(Exception e){
-               e.printStackTrace();
-           }
+            try{
+                Thread.sleep(250);
+                    if(stock > 5){
+                        Thread.sleep(800);
+                    }
+            }catch(Exception e){
+                e.printStackTrace();
+            }
         }
     }
     public void consumer() {
@@ -20,9 +20,9 @@ class MyHeadPhone{
             System.out.println("Consumer = " + stock);
             try{
                 Thread.sleep(200);
-                if(stock < 1){
-                Thread.sleep(1800);
-                }
+                    if(stock < 1){
+                        Thread.sleep(1800);
+                    }
             }catch(Exception e){
                 e.printStackTrace();
             }

@@ -37,13 +37,13 @@ public class VegetableDemo{
 				v = new Potato();
 				break;
 			case "Brinjal":
-				v = new Tomato();
+				v = new Brinjal();
 				break;
 			case "Tomato":	
 				v = new Tomato();
 				break;
 		}
 		
-		System.out.println(veg + ":" + v.tostring());
+		System.out.println(veg + " : " + v.tostring());
 	}
 }

@@ -16,8 +16,8 @@ public class FinallyBlockDemo{
             e.printStackTrace();
         }
         finally{
-            System.out.println("---------above balance is after the withdrawal.--------------");
-            //Finally Block will be Execute with Exception and wthout Exception.
+            System.out.println("--------- above balance is after the withdrawal. --------------");
+            //Finally Block will be Execute with Exception and without Exception.
         }
     } 
 }

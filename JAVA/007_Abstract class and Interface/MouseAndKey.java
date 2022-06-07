@@ -43,15 +43,10 @@ class EventDemo implements MouseListener, KeyListener{
 }
 public class MouseAndKey{
     public static void main(String[] args){
-        // EventDemo ed = new EventDemo();
-        // ed.mousePressed();
-        // ed.mouseMoved();
-        // ed.keyPressed();
-        // ed.keyReleased();
-        int sum=0;
-        while (true){
-            System.out.println(sum);
-            sum++;
-        }
+        EventDemo ed = new EventDemo();
+        ed.mousePressed();
+        ed.mouseMoved();
+        ed.keyPressed();
+        ed.keyReleased();
     }
 }
