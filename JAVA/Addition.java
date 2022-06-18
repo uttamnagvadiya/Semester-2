@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 public class Addition{
     public static void main(String[] args){
         float x = Float.parseFloat(args[0]);
@@ -7,11 +7,11 @@ public class Addition{
 
         System.out.println("ADDITION: "+z);
         
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("x = ");
-        x = input.nextFloat();
+        x = sc.nextFloat();
         System.out.print("y = ");
-        y = input.nextFloat();
+        y = sc.nextFloat();
 
         z = x + y;
         System.out.println("ADDITION: "+z);
