@@ -67,7 +67,7 @@
 
 9.	Select rtrim('       hello world         ')
 
-10.	Select left('SQL Server', 4), right('SQL Server', 5)
+10.	Select left('SQL Server', 4), right('SQL Server', 3)
  
 11.	Select cast('1234.56' as decimal(8,2))
 

@@ -10,7 +10,7 @@
 
 5.	Select convert(varchar(50), getdate(), 107)
 
-6.	Select DateDiff(Month, '31-Dec-08', '31-Mar-09')
+6.	Select DateDiff(month, '31-Dec-08', '31-Mar-09')
 
 7.	Select DateDiff(Year, '14-Sep-10', '25-Jan-12')
 
@@ -28,7 +28,7 @@
 13.	Select EoMonth(getdate())
 
 14.	Select DateADD(Day, 30, getdate())
-	Select getdate() + 30
+	Select getdate() - 30
 
 15.	Select DateDiff(Year, '2004-01-05', getdate())
 

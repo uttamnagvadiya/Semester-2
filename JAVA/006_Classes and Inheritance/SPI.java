@@ -55,7 +55,7 @@ class Student{
         //------------- Calculate SPI & Percentage --------------------------
 
         spi = total_score / total_credit;
-        //percentage = (spi - 0.5)*10;
+        percentage = (spi - 0.5)*10;
     }
     public void printStudentDetials(){
             System.out.println("----------------------------------------- Student Result --------------------------------------\n");
@@ -67,6 +67,7 @@ class Student{
             }
             System.out.print("Total Credit : " + total_credit + "\t\t");
             System.out.println("SPI : " + spi+"\n");
+            System.out.println("Percentage : " + percentage+"%\n");
         }    
 }
 public class SPI{
