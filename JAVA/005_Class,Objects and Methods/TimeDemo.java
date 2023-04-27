@@ -14,7 +14,7 @@ class Time{
         minute = input.nextInt();
         System.out.print("Second = ");
         second = input.nextInt();
-        System.out.println("\n");
+        System.out.println();
     }
 
     void displayTime(){
